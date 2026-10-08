@@ -29,7 +29,7 @@ const Showcase = () => {
                     ease: 'power1.in'
                 })
         }
-    }, [isTablet])
+    }, { dependencies: [isTablet], revertOnUpdate: true })
 
   return (
     <section id="showcase">
